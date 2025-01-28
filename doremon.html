@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doremon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: black;
+            padding-top: 50px;
+        }
+        .outer-box{
+            width: 500px;
+            margin: auto;
+        }
+        .outer-box .head-part{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            background: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .head-part .eyes-part{
+            width: 100px;
+            height: 80px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+        .eyes-part .eye1 , .eyes-part .eye2{
+            flex-basis: 30px;
+            height: 40px;
+            margin: 35px auto;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 2px;
+        }
+        .eye1 .black-part , .eye2 .black-part{
+            flex-basis: 20px;
+            height: 25px;
+            background: black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 4px;
+        }
+        .black-part .white-part{
+            width: 2.5px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+        }
+        .head-part .nose{
+            width: 35px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+        .head-part .mouth{
+            width: 100px;
+            height: 50px;
+            margin: auto;
+        }
+        .mouth .mouth-outer-part{
+            width: 80px;
+            height: 40px;
+            background: white;
+            border-radius: 0 0 100px 100px;
+            margin: 2px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .mouth-outer-part .mouth-inner-part{
+            flex-basis: 60px;
+            height: 30px;
+            background-color: red;
+            border-radius: 0 0 100px 100px;
+        }
+        .body-part{
+            width: 195px;
+            height: 250px;
+            background: blue;
+            margin: auto;
+            border-radius: 15%;
+            position: absolute;
+            left: 755px;
+            top: 245px;
+        }
+        .body-part .colar{
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: -12px;
+            left: 50px;
+        }
+        .colar-part{
+            width: 80px;
+            height: 25px;
+            background: red;
+            margin: auto;
+            border-radius: 50px;
+        }
+        .colar-part .colar-mid-part{
+            width: 25px;
+            height: 25px;
+            background: yellow;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .gadget-pocket{
+            width: 100px;
+            height: 50px;
+            background: white;
+            margin: 120px auto;
+            border-radius: 0 0 100px 100px;
+        }
+        .hand{
+            width: 400px;
+            height: 45px;
+            background: blue;
+            border-radius: 50px;
+            outline: none;
+            position: absolute;
+            top: 20px;
+            left: -100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hand-part1{
+            width: 45px;
+            height: 45px;
+            background: white;
+            border-radius: 50%;
+        }
+        .hand-part2{
+            width: 45px;
+            height: 45px;
+            background: white;
+            border-radius: 50%;
+        }
+        .leg-part{
+            width: 200px;
+            height: 60px;
+            margin: 205px auto;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+        .leg-part .leg1 , .leg-part .leg2{
+            flex-basis: 49.5%;
+            height: 100%;
+            background: white;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="head-part">
+            <div class="eyes-part">
+                <div class="eye1">
+                    <div class="black-part">
+                        <div class="white-part"></div>
+                    </div>
+                </div>
+                <div class="eye2">
+                    <div class="black-part">
+                        <div class="white-part"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="mouth-outer-part">
+                    <div class="mouth-inner-part"></div>
+                </div>
+            </div>
+        </div>
+        <div class="body-part">
+            <div class="colar">
+                <div class="colar-part">
+                    <div class="colar-mid-part"></div>
+                </div>
+            </div>
+            <div class="hand">
+                <div class="hand-part1"></div>
+                <div class="hand-part2"></div>
+            </div>
+            <div class="gadget-pocket"></div>
+        </div>
+        <div class="leg-part">
+            <div class="leg1"></div>
+            <div class="leg2"></div>
+        </div>
+    </div>
+</body>
+</html>
